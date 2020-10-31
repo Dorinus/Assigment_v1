@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.main.MainViewController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="528.0">
+               <children>
+                  <Label text="Thermometer 1:">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="firstThermTextField">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="528.0">
+               <children>
+                  <Label text="Thermometer 1:">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="secondThermTextField">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="528.0">
+               <children>
+                  <Label text="Thermometer 1:">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="thirdThermTextField">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="528.0">
+               <children>
+                  <Label text="Power State:">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="powerStateTextField">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#onUpButton" text="Up">
+                     <HBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="295.0" layoutY="10.0" mnemonicParsing="false" onAction="#onDownButton" text="Down">
+                     <HBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="528.0">
+               <children>
+                  <Label fx:id="errorLabel">
+                     <padding>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#onSecondScreen" text="Button">
+                     <padding>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="300.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
